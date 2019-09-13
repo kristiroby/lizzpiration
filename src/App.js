@@ -5,19 +5,24 @@ class App extends React.Component {
   constructor (props){
     super(props)
     this.state = {
-      lizzoQuotes: lizzoQuotes,
-      quote: '',
-      source: ''
-      // }
+      quotes: {}
     }
   }
 
-  // fetch(https://us-central1-corded-essence-252619.cloudfunctions.net/function-1)
+  componentDidMount() {
+    fetch('https://us-central1-corded-essence-252619.cloudfunctions.net/function-1')
+      .then(response => {
+        return response.json()
+      }).then(data => {
+        this.setState({quotes: data})
+      })
+  }
 
   render () {
     return (
       <div>
-        {this.state.lizzoQuotes[0].quote}
+        {this.state.quotes.quote} <br />
+        {this.state.quotes.source}
       </div>
     )
   }
