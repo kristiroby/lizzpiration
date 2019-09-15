@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+h1 {
+  text-align: center;
+}
+.quote-source {
+  text-align: center;
+  /* padding: 15px; */
+}
+.quotelines {
+  padding: 10px;
+}

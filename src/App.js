@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Aside from './Aside.js';
+import Quote from './Quote.js';
 
 class App extends React.Component {
   constructor (props){
@@ -9,20 +11,13 @@ class App extends React.Component {
     }
   }
 
-  componentDidMount() {
-    fetch('https://us-central1-corded-essence-252619.cloudfunctions.net/function-1')
-      .then(response => {
-        return response.json()
-      }).then(data => {
-        this.setState({quotes: data})
-      })
-  }
+  
 
   render () {
     return (
       <div>
-        {this.state.quotes.quote} <br />
-        {this.state.quotes.source}
+        <Aside />
+        <Quote />
       </div>
     )
   }
