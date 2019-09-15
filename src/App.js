@@ -10,8 +10,6 @@ class App extends React.Component {
       quotes: {}
     }
   }
-
-
   
   render () {
     return (
