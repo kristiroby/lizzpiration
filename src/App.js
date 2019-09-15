@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import Aside from './Aside.js';
+import Quote from './Quote.js';
+// import { createStore } from 'redux'
+// import { create } from 'domain';
 
 class App extends React.Component {
   constructor (props){
@@ -17,28 +21,17 @@ fetchQuote = () => {
         this.setState({quotes: data})
       })
   }
+
   componentDidMount() {
     this.fetchQuote()
+    // console.log(createStore)
   } 
   
   render () {
     return (
       <div>
-        <h1>Lizzpiration</h1>
-      <div className="quote-source">
-        <div className="quotelines">
-          {this.state.quotes.quote}
-        </div>
-        <div className="quotelines">
-          {this.state.quotes.source} 
-        </div>
-        <div>
-          <button onClick={this.fetchQuote} >Get the Juice</button>
-        </div>
-        <div>
-          <img src="http://placekitten.com/g/200/300" alt="kitty cat kitty cat purrrr" height="300px" width="auto"></img>
-        </div>
-      </div>
+        <Aside />
+        <Quote />
       </div>
     )
   }
