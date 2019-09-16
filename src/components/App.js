@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import Aside from './Aside.js';
 import Quote from './Quote.js';
 

@@ -23,7 +23,7 @@ class Quote extends React.Component {
         return (
           <div>
             <h1>Lizzpiration</h1>
-          <div className="quote-source">
+          <div className="wrap">
             <div className="quotelines">
               {this.state.quotes.quote}
             </div>
