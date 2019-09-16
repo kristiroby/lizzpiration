@@ -23,11 +23,11 @@ class Quote extends React.Component {
         return (
           <div>
             <h1>Lizzpiration</h1>
-          <div className="wrap">
-            <div className="quotelines">
+          <div data-test="quoteContainer">
+            <div className="fetchedQuote" data-test="fetchedQuote">
               {this.state.quotes.quote}
             </div>
-            <div className="quotelines">
+            <div className="fetchedQuoteSource" data-test="fetchedQuoteSource">
               {this.state.quotes.source} 
             </div>
             <div>
