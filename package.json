@@ -8,8 +8,10 @@
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
     "react-scripts": "3.1.1",
+    "react-spinners-kit": "^1.9.0",
     "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,8 +36,6 @@
   },
   "devDependencies": {
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "jest": "^24.9.0",
-    "jest-enzyme": "^7.1.1"
+    "enzyme-adapter-react-16": "^1.14.0"
   }
 }
