@@ -21,7 +21,7 @@ describe('Quote Component', () => {
     });
 
     it('Should render without error', () => {
-        const container = findByTestAttribute(component, 'quoteContainer');
+        const container = findByTestAttribute(component, 'container');
         expect(container.length).toBe(1);
         });
     it('Should render a quote', () => {

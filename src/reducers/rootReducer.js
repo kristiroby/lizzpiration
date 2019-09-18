@@ -1,6 +1,8 @@
-// import { combineReducers } from "redux";
-// import quote from "./quoteReducer";
+import { combineReducers } from 'redux';
+import { quote, quoteHasErrored, quoteIsLoading } from './quoteReducer';
 
-// export default combineReducers({
-//   quote
-// });
+export default combineReducers({
+  quote,
+  quoteHasErrored,
+  quoteIsLoading
+});
