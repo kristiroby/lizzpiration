@@ -1,3 +1,5 @@
+import fetch from 'cross-fetch'
+
 export function quoteHasErrored(bool) {
     return {
         type: 'QUOTE_HAS_ERRORED',
@@ -20,8 +22,7 @@ export function quoteFetchSuccess(quote) {
 }
 export function fetchQuoteData(url) {
     return (dispatch) => {
-        dispatch(quoteIsLoading(true));
-
+        dispatch(quoteIsLoading(true))
         fetch(url)
         .then((response) => {
             if (!response.ok) {

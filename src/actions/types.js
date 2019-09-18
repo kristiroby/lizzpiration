@@ -1,3 +1,3 @@
-export const types = {
-    GET_QUOTES: 'getQuotes'
-};
+// export const types = {
+//     GET_QUOTES: 'getQuotes'
+// };
