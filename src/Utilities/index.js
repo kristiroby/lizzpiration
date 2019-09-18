@@ -1,4 +1,4 @@
-export const findByTestAtrr = (component, attribute) => {
+export const findByTestAtrribute = (component, attribute) => {
     const wrapper = component.find(`[data-test='${attribute}']`);
     return wrapper;
 };
