@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAMA,sBACE,iBAEF,CACA,YACE,YACF","file":"main.0183ff8d.chunk.css","sourcesContent":[".App {\n  text-align: center;\n}\nh1 {\n  text-align: center;\n}\n.quote-source {\n  text-align: center;\n  /* padding: 15px; */\n}\n.quotelines {\n  padding: 10px;\n}\n"]}
