@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-restricted-globals
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d91459f7326c192727252d5a24f9c06f",
