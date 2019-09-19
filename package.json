@@ -2,7 +2,7 @@
   "name": "lizzpiration",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://kristiroby.github.io/lizzpiration",
+  
   "dependencies": {
     "@google-cloud/storage": "^3.2.1",
     "cross-fetch": "^3.0.4",
