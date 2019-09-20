@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { fetchQuoteData } from '../actions/fetchQuote'
 import { ClassicSpinner } from "react-spinners-kit";
-// import PropTypes from 'prop-types';
+import Lizzo from '../components/lizzo.png';
 
 class Quote extends React.Component {
     componentDidMount() {
@@ -23,16 +23,16 @@ class Quote extends React.Component {
               />
       }
       return (
-        <div className='container'>
+        <div className='quote-container'>
+          <div className="button">
           <button onClick={this.handleClick}>Get the Juice</button>
-          <div data-test='fetchedQuote'>
+        </div>
+          <div className='quote'>
             <p>{this.props.quote.quote}</p>
           </div>
-
-          <div data-test='fetchedQuoteSource'>
+          <div className='source'>
             <p>{this.props.quote.source} </p>
-  
-            <img src="http://placekitten.com/g/200/300" alt="kitty cat kitty cat purrrr" height="300px" width="auto"></img>
+            <img src={Lizzo} alt="kitty cat kitty cat purrrr" height="300px" width="auto"></img>
           </div>
         </div>
       )
