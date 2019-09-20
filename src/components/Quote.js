@@ -27,12 +27,12 @@ class Quote extends React.Component {
           <div className="button">
           <button onClick={this.handleClick}>Get the Juice</button>
         </div>
-          <div className='quote'>
+          <div className='quote white-text'>
             <p>{this.props.quote.quote}</p>
           </div>
-          <div className='source'>
+          <div className='source white-text'>
             <p>{this.props.quote.source} </p>
-            <img src={Lizzo} alt="kitty cat kitty cat purrrr" height="300px" width="auto"></img>
+            <img src={Lizzo} alt="kitty cat kitty cat purrrr" height="300px" width="auto" className="circle"></img>
           </div>
         </div>
       )
